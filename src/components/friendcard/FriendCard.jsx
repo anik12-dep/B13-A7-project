@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const FriendCard = ({ friend }) => {
-  // স্ট্যাটাস অনুযায়ী কালার সেট
+  
   const statusColors = {
     overdue: "bg-red-100 text-red-600",
     "on-track": "bg-green-100 text-green-600",

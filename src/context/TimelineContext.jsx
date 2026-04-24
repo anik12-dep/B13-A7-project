@@ -8,9 +8,9 @@ export const TimelineProvider = ({ children }) => {
   const addEntry = (type, name) => {
     const newEntry = {
       id: Date.now(),
-      type: type, // যেমন: "Call"
-      name: name, // যেমন: "Sarah Chen"
-      // এই টাইটেলটা যোগ করে দিচ্ছি যাতে split লজিক কাজ করে
+      type: type, 
+      name: name, 
+      
       title: `${type} with ${name}`,
       date: new Date().toLocaleDateString("en-US", {
         month: "long",

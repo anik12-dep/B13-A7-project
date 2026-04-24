@@ -6,7 +6,7 @@ const Timeline = () => {
   const { timeline } = useContext(TimelineContext);
   const [selectedFriend, setSelectedFriend] = useState("All");
 
-  // আইকন ফাংশন (আপনার স্ক্রিনশট অনুযায়ী)
+  
   const getIcon = (type) => {
     if (type === "Call") return <FaPhoneAlt className="text-gray-600" />;
     if (type === "Text") return <FaCommentAlt className="text-gray-400" />;
@@ -14,13 +14,13 @@ const Timeline = () => {
     return <FaUsers className="text-orange-400" />;
   };
 
-  // ডেটা ফিল্টার করা
+  
   const filteredTimeline =
     selectedFriend === "All"
       ? timeline
       : timeline.filter((item) => item.name === selectedFriend);
 
-  // ইউনিক ফ্রেন্ডের লিস্ট বের করা ড্রপডাউনের জন্য
+ 
   const friendList = [...new Set(timeline.map((item) => item.name))];
 
   return (
@@ -28,7 +28,7 @@ const Timeline = () => {
       <div className="max-w-4xl mx-auto">
         <h1 className="text-4xl font-black text-[#232424] mb-6">Timeline</h1>
 
-        {/* ফিল্টার ড্রপডাউন */}
+        
         <select
           onChange={(e) => setSelectedFriend(e.target.value)}
           className="bg-white border border-gray-200 rounded-lg px-4 py-2 text-sm mb-10 w-full md:w-64 outline-none shadow-sm"

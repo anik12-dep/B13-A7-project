@@ -21,7 +21,7 @@ const FriendDetails = () => {
     return <div className="text-center p-20 font-bold">Friend not found!</div>;
   }
 
-  // আপনার দেওয়া ইন্টারেকশন লজিক
+  
   const handleInteraction = (type) => {
     addEntry(type, friend.name);
     alert(`${type} recorded! Check Timeline.`);
@@ -30,7 +30,7 @@ const FriendDetails = () => {
   return (
     <div className="bg-[#F9FAFB] min-h-screen py-12 px-4 md:px-10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* বাম পাশের প্রোফাইল কার্ড - স্ক্রিনশট অনুযায়ী */}
+        
         <div className="lg:col-span-4 space-y-6">
           <div className="bg-white p-10 rounded-[32px] text-center shadow-sm border border-gray-100">
             <img
@@ -57,7 +57,7 @@ const FriendDetails = () => {
             </p>
           </div>
 
-          {/* অ্যাকশন বাটন লিস্ট */}
+          
           <div className="space-y-3">
             <button className="w-full py-4 bg-white rounded-2xl font-bold text-gray-700 shadow-sm flex items-center justify-center gap-3 border border-gray-100 hover:bg-gray-50 transition-all">
               <FaClock /> Snooze 2 Weeks
@@ -71,9 +71,9 @@ const FriendDetails = () => {
           </div>
         </div>
 
-        {/* ডান পাশের স্ট্যাটাস এবং চেক-ইন */}
+       
         <div className="lg:col-span-8 space-y-6">
-          {/* স্ট্যাটাস কার্ড গ্রিড */}
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-white p-8 rounded-3xl border border-gray-100 text-center shadow-sm">
               <p className="text-4xl font-black text-[#1a3a32]">
@@ -99,7 +99,7 @@ const FriendDetails = () => {
             </div>
           </div>
 
-          {/* গোল কার্ড */}
+         
           <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative">
             <button className="absolute top-8 right-8 bg-gray-50 p-2 rounded-lg text-gray-400 hover:text-gray-600">
               <FaEdit />
@@ -115,7 +115,7 @@ const FriendDetails = () => {
             </p>
           </div>
 
-          {/* Quick Check-In সেকশন - স্ক্রিনশট অনুযায়ী আইকন বক্স */}
+          
           <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
             <h3 className="text-xl font-black text-[#1a3a32] mb-6">
               Quick Check-In

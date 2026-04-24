@@ -12,9 +12,9 @@ const Footer = () => {
           nurture the relationships that matter most.
         </p>
 
-        {/* Social Links */}
+        
         <div className="flex justify-center gap-8 mb-16">
-          {/* ... আপনার আইকনগুলো ... */}
+          
         </div>
 
         <div className="border-t border-white/10 pt-10 text-emerald-100/40 text-sm">
@@ -25,5 +25,5 @@ const Footer = () => {
   );
 };
 
-// এই লাইনটিই আপনার ফাইলে মিসিং আছে, এটা যোগ করলেই সাদা পেজ ঠিক হয়ে যাবে
+
 export default Footer;
