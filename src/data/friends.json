@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Alex Johnson",
+    "picture": "https://i.pravatar.cc/150?img=1",
+    "email": "alex@example.com",
+    "days_since_contact": 12,
+    "status": "overdue",
+    "tags": ["college", "close friend"],
+    "bio": "Met in university. We love hiking and traveling together.",
+    "goal": 14,
+    "next_due_date": "2026-04-25"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Williams",
+    "picture": "https://i.pravatar.cc/150?img=2",
+    "email": "sarah@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["work", "mentor"],
+    "bio": "My colleague and mentor. Always gives great advice.",
+    "goal": 10,
+    "next_due_date": "2026-05-01"
+  },
+  {
+    "id": 3,
+    "name": "David Kim",
+    "picture": "https://i.pravatar.cc/150?img=3",
+    "email": "david@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["gym", "buddy"],
+    "bio": "We hit the gym together every weekend.",
+    "goal": 10,
+    "next_due_date": "2026-04-28"
+  },
+  {
+    "id": 4,
+    "name": "Emma Wilson",
+    "picture": "https://i.pravatar.cc/150?img=4",
+    "email": "emma@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["school", "friend"],
+    "bio": "School friend, we often hang out and chat.",
+    "goal": 7,
+    "next_due_date": "2026-05-05"
+  },
+  {
+    "id": 5,
+    "name": "James Wright",
+    "picture": "https://i.pravatar.cc/150?img=5",
+    "email": "james@example.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["travel", "friend"],
+    "bio": "Travel partner from last summer trip.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 6,
+    "name": "Lisa Martinez",
+    "picture": "https://i.pravatar.cc/150?img=6",
+    "email": "lisa@example.com",
+    "days_since_contact": 7,
+    "status": "almost due",
+    "tags": ["neighbor"],
+    "bio": "Lives next door, very friendly and helpful.",
+    "goal": 10,
+    "next_due_date": "2026-04-27"
+  }
+]
