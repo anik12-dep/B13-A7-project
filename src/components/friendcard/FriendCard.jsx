@@ -1,42 +1,50 @@
 import { Link } from "react-router-dom";
 
 const FriendCard = ({ friend }) => {
-  
-  const statusColors = {
-    overdue: "bg-red-100 text-red-600",
-    "on-track": "bg-green-100 text-green-600",
-    "almost due": "bg-orange-100 text-orange-600",
-  };
-
   return (
-    <Link to={`/friend/${friend.id}`}>
-      <div className="bg-white p-8 rounded-[32px] shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-md transition-all border border-gray-50 text-center flex flex-col items-center">
-        <img
-          src={friend.picture}
-          className="w-20 h-20 rounded-full mb-4 object-cover border-4 border-gray-50"
-          alt={friend.name}
-        />
-        <h2 className="text-xl font-extrabold text-[#1a3a32]">{friend.name}</h2>
-        <p className="text-xs text-gray-400 mt-1 mb-3">
-          {friend.days_since_contact}d ago
-        </p>
-
-        <div className="flex gap-2 mb-4">
-          {friend.tags.map((tag) => (
-            <span
-              key={tag}
-              className="text-[10px] font-bold uppercase tracking-widest text-[#1F4337] bg-[#E9F0EE] px-3 py-1 rounded-full"
-            >
-              {tag}
-            </span>
-          ))}
+    <Link to={`/friend/${friend.id}`} className="group">
+      <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 text-center h-full">
+        
+        <div className="relative inline-block mb-6">
+          <img
+            src={friend.picture}
+            alt={friend.name}
+            className="w-20 h-20 rounded-full object-cover border-4 border-gray-50 shadow-sm group-hover:scale-105 transition-transform"
+          />
+          
+          <div className="absolute bottom-1 right-1 w-4 h-4 bg-green-500 border-2 border-white rounded-full"></div>
         </div>
 
-        <span
-          className={`text-[11px] font-black uppercase tracking-widest px-5 py-2 rounded-full ${statusColors[friend.status] || "bg-gray-100"}`}
-        >
-          {friend.status}
-        </span>
+        
+        <h3 className="text-xl font-black text-[#1a3a32] mb-1">
+          {friend.name}
+        </h3>
+        <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-4">
+          {friend.category}
+        </p>
+
+      
+        <div className="mb-6">
+          <span
+            className={`text-[10px] font-black uppercase px-4 py-1.5 rounded-full ${
+              friend.status === "Needs Attention"
+                ? "bg-red-50 text-red-500"
+                : "bg-emerald-50 text-emerald-600"
+            }`}
+          >
+            {friend.status}
+          </span>
+        </div>
+
+       
+        <div className="pt-4 border-t border-gray-50">
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-wider">
+            Last Contact
+          </p>
+          <p className="text-lg font-black text-[#1a3a32]">
+            {friend.days_since_contact} Days Ago
+          </p>
+        </div>
       </div>
     </Link>
   );

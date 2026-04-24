@@ -20,7 +20,6 @@ const Home = () => {
   return (
     <div className="bg-[#F9FAFB] min-h-screen pb-24">
       <div className="max-w-7xl mx-auto px-6 pt-20 text-center">
-      
         <h2 className="text-5xl md:text-6xl font-black text-[#1F4337] mb-6 leading-tight tracking-tight">
           Friends to keep close <br /> in your life
         </h2>
@@ -29,12 +28,10 @@ const Home = () => {
           nurture the relationships that matter most.
         </p>
 
-       
         <button className="bg-[#1F4337] text-white px-8 py-3 rounded-full font-bold shadow-lg hover:bg-[#152e26] transition-all mb-20">
           + Add a Friend
         </button>
 
-       
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-24">
           {[
             { label: "Total Friends", value: "10", color: "text-[#1F4337]" },
@@ -56,12 +53,10 @@ const Home = () => {
           ))}
         </div>
 
-       
         <div className="text-left mb-10">
           <h3 className="text-2xl font-black text-[#1F4337]">Your Friends</h3>
         </div>
 
-        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {friends.map((f) => (
             <FriendCard key={f.id} friend={f} />
